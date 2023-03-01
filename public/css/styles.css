@@ -1,0 +1,112 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-bar {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.burger-menu {
+    color: #ebebeb;
+    background-color: #1259c3;
+    max-width: 50px;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.search-bar {
+    margin-left: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 30px;
+    width: 300px;
+    margin-right: 0px;
+    line-height: 1;
+}
+
+.search-button {
+    height: 30px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: 0px;
+    line-height: 1;
+
+}
+
+
+
+.banner {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 12px;
+}
+
+.titular {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.imagen-producto {
+    width: 100%;
+    box-sizing: border-box;
+}
+/* ● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tipografías
+Familia: 'Roboto'
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+● Íconos
+
+El departamento de diseño usó los íconos de este sitio:
+https://fontawesome.com/icons?d=gallery&m=free
+*/
