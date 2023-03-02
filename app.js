@@ -11,6 +11,18 @@ app.get ('/', function(req,res) {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
 
+app.get ('/register', function(req, res) {
+    res.sendFile(path.resolve(__dirname, './views/register.html'))
+})
+
+app.get ('/log-in', function(req, res) {
+    res.sendFile(path.resolve(__dirname, './views/log-in.html'))
+})
+
+app.get ('/ayuda', function(req, res) {
+    res.sendFile(path.resolve(__dirname, './views/ayuda.html'))
+})
+
 app.listen (3000, () => {
-    console.log ('funka 3000');
+    console.log ('funka http://localhost:3000');
 });
