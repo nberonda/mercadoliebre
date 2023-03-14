@@ -28,12 +28,12 @@ header {
     text-align: right;
 }
 
-ul {
+.left-navbar, .right-navbar {
     list-style: none;
-    display: flex;
+    display: none;
 }
 
-a{
+.header-link{
     color: black;
     text-decoration: none;
 }
@@ -49,8 +49,15 @@ a{
     border-radius: 8px;
 }
 
+.top-bar label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .search-bar {
     margin-left: 50px;
+    border-right: 0px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     height: 30px;
@@ -61,11 +68,12 @@ a{
 
 .search-button {
     height: 30px;
+    border-left: 0px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     margin-left: 0px;
     line-height: 1;
-
+    background-color: white;
 }
 
 
@@ -74,6 +82,34 @@ a{
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+}
+
+main {
+    width: 90%;
+    display:block;
+    margin: 5%
+}
+
+main section article {
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+.detalles {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.detalles i {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.descuento {
+    color: #39b54a;
 }
 
 footer {
@@ -124,6 +160,23 @@ p {
     box-sizing: border-box;
 }
 
+@media (min-width: 361px) {     /* tablet viewport */
+    .burger-menu {
+        display: none;
+    }
+    .left-navbar, .right-navbar {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {    /* desktop viewport */
+    .burger-menu {
+        display: none;
+    }
+    .left-navbar, .right-navbar {
+        display:flex;
+    }
+}
 /* ● Paleta de colores
 Amarillo: #EAC926;
 Azul: #03264C;
