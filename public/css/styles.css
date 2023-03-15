@@ -17,15 +17,17 @@ header {
 }
 
 .bottom-bar {
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .left-navbar {
-    text-align: left;
+    justify-content: space-between;
 }
 
 .right-navbar {
-    text-align: right;
+ justify-content: space-around;
+ padding-right: 40px;
 }
 
 .left-navbar, .right-navbar {
