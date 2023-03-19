@@ -1,19 +1,70 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
 }
 
 body {
 
     background-color: #ebebeb;
+    width: 100vw;
 }
 
 header {
     background-color: #EAC926;
+    width: 100vw;
 }
 
 .top-bar {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.logo-mercado-liebre {
+    width: 45vw;
+}
+
+.top-bar label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 45vw;
+}
+
+.search-bar {
+    width: 60%;
+    border-right: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 40px;
+    margin-right: 0px;
+    line-height: 1;
+    font-size: 15px;
+}
+
+.search-button {
+    height: 40px;
+    border-left: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: 0px;
+    line-height: 1;
+    background-color: white;
+}
+
+.header-msg {
+    width: 70vw;
+    margin-top: 15px;
+    align-self: center;
+    font-size: 12px;
 }
 
 .bottom-bar {
@@ -23,16 +74,21 @@ header {
 
 .left-navbar {
     justify-content: space-between;
+    padding-left: 5px;
 }
 
 .right-navbar {
- justify-content: space-around;
- padding-right: 40px;
+ justify-content: space-between;
+ padding-right: 5px;
 }
 
 .left-navbar, .right-navbar {
     list-style: none;
     display: none;
+}
+
+.bottom-bar a {
+    padding: 5px
 }
 
 .header-link{
@@ -45,40 +101,14 @@ header {
     background-color: #1259c3;
     max-width: 40px;
     margin: auto;
-    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
     box-sizing: border-box;
     text-align: center;
     border-radius: 8px;
+    font-size: 22px;
 }
-
-.top-bar label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.search-bar {
-    margin-left: 50px;
-    border-right: 0px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    height: 30px;
-    width: 300px;
-    margin-right: 0px;
-    line-height: 1;
-}
-
-.search-button {
-    height: 30px;
-    border-left: 0px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-left: 0px;
-    line-height: 1;
-    background-color: white;
-}
-
-
 
 .banner {
     text-align: center;
@@ -92,10 +122,18 @@ main {
     margin: 5%
 }
 
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 main section article {
     margin-bottom: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px rgb(100,100,100);
+    position: relative;
 }
 
 .detalles {
@@ -103,11 +141,20 @@ main section article {
     padding: 15px;
 }
 
-.detalles i {
-    color: #39b54a;
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #39b54a;
     border-radius: 50%;
-    padding: 7px;
+    background-color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: 80px;
+    color: #39b54a;
+    text-align: center;
 }
 
 .descuento {
@@ -143,6 +190,7 @@ p {
 
 .titular {
     font-size: 24px;
+    margin: 20px auto;
 }
 
 .precio {
@@ -163,11 +211,17 @@ p {
 }
 
 @media (min-width: 361px) {     /* tablet viewport */
+    .logo-mercado-liebre, .top-bar label, .header-msg {
+        width: 30vw;
+    }
     .burger-menu {
         display: none;
     }
     .left-navbar, .right-navbar {
         display: flex;
+    }
+    main section article {
+        width: 45%;
     }
 }
 
@@ -177,6 +231,9 @@ p {
     }
     .left-navbar, .right-navbar {
         display:flex;
+    }
+    main section article {
+        width: 20%;
     }
 }
 /* ● Paleta de colores
