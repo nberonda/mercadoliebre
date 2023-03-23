@@ -1,0 +1,22 @@
+footer {
+    text-align: center;
+    bottom: 0;
+}
+
+footer section i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer section h4 {
+    margin: 5px;
+}
+
+footer section p {
+    margin: 5px;
+}
+
+.copyright {
+    margin: 12px;
+}

@@ -16,7 +16,7 @@ app.get ('/register', function(req, res) {
 })
 
 app.get ('/log-in', function(req, res) {
-    res.sendFile(path.resolve(__dirname, './views/log-in.html'))
+    res.sendFile(path.resolve(__dirname, './views/login.html'))
 })
 
 app.get ('/ayuda', function(req, res) {
