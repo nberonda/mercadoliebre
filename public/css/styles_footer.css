@@ -7,6 +7,11 @@ footer section i {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: color 450ms linear;
+}
+
+footer section:hover i {
+    color: cornflowerblue;
 }
 
 footer section h4 {
@@ -19,4 +24,23 @@ footer section p {
 
 .copyright {
     margin: 12px;
+}
+
+@media (min-width: 361px) {      /* tablet viewport */
+    
+}
+
+@media (min-width: 769px) {      /* desktop viewport */
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-evenly;
+    }
+    footer section {
+        width: 33vw;
+    }
+    .copyright {
+        text-align: start;
+    }
 }

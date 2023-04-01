@@ -1,0 +1,18 @@
+{
+    "name": "mercadoliebre",
+    "description": "E-commerce Digital House",
+    "authors": "Nicolás Beronda",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "normalize": "^0.3.1"
+    },
+    "scripts": {
+        "test": "nodemon app.js",
+
+        "start": "node app.js"
+    }
+}

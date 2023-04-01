@@ -10,3 +10,27 @@ p {
     font-size: 12px;
 }
 
+body {
+
+    background-color: #ebebeb;
+    width: 100vw;
+    margin-top: 188px;
+}
+
+main {
+    width: 90%;
+    display:block;
+    margin: 5%
+}
+
+@media (min-width: 361px) {     /* tablet viewport */
+    body {
+        margin-top: 160px;
+    }
+}
+
+@media (min-width: 769px) {    /* desktop viewport */
+    body {
+        margin-top: 110px;
+    }
+}

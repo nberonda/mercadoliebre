@@ -10,12 +10,19 @@ body {
 
     background-color: #ebebeb;
     width: 100vw;
+    margin-top: 188px;
 }
 
 main {
     width: 90%;
     display:block;
     margin: 5%
+}
+
+.banner {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 main section {
@@ -28,8 +35,13 @@ main section {
 main section article {
     margin-bottom: 10px;
     background-color: white;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
+    box-shadow: 0px 0px 1px rgb(100,100,100);
     position: relative;
+    transition: box-shadow 450ms linear;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
 }
 
 .detalles {
@@ -51,6 +63,11 @@ main section article i {
     bottom: 80px;
     color: #39b54a;
     text-align: center;
+    transition: transform 450ms linear;
+}
+
+article:hover i {
+    transform: rotateZ(-90deg);
 }
 
 .descuento {
@@ -76,6 +93,12 @@ p {
 
 .descripcion {
     font-size: 16px;
+    opacity: 0;
+    transition: opacity 450ms linear;
+}
+
+article:hover .descripcion {
+    opacity: 1;
 }
 
 .imagen-producto {
@@ -88,14 +111,8 @@ h4 {
 }
 
 @media (min-width: 361px) {     /* tablet viewport */
-    .logo-mercado-liebre, .top-bar label, .header-msg {
-        width: 30vw;
-    }
-    .burger-menu {
-        display: none;
-    }
-    .left-navbar, .right-navbar {
-        display: flex;
+    body {
+        margin-top: 160px;
     }
     main section article {
         width: 45%;
@@ -103,11 +120,8 @@ h4 {
 }
 
 @media (min-width: 769px) {    /* desktop viewport */
-    .burger-menu {
-        display: none;
-    }
-    .left-navbar, .right-navbar {
-        display:flex;
+    body {
+        margin-top: 110px;
     }
     main section article {
         width: 20%;
